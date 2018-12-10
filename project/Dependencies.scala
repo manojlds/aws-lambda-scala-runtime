@@ -14,5 +14,7 @@ object Dependencies {
 
   lazy val lambdaEvents = "com.amazonaws" % "aws-lambda-java-events" % "2.2.4"
 
+  lazy val httpClient = "com.softwaremill.sttp" %% "core" % "1.5.1"
+
   lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.0.5" % Test
 }
