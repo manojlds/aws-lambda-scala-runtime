@@ -18,7 +18,7 @@ lazy val client = (project in file("lambda-runtime-client")).
   settings(commonSettings: _*).
   settings(
     name := "aws-lambda-scala-runtime-client",
-    libraryDependencies ++= Seq(httpClient),
+    libraryDependencies ++= httpClient,
   )
 
 lazy val runtime = (project in file("lambda-runtime")).
