@@ -11,6 +11,7 @@ lazy val commonSettings = Seq(
   ),
   javacOptions ++= Seq("-source", "1.8", "-target", "1.8"),
   crossPaths := false,
+  scalafmtOnCompile := true,
   assemblyOption in assembly := (assemblyOption in assembly).value.copy(includeScala = false)
 )
 
